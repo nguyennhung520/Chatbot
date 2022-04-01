@@ -92,16 +92,3 @@ nlu:
     - thông tin khoá của trung tâm
     - trung tâm đào tạo có những khoá học nào
 
-- intent: request_phone
-  examples: |
-    - tôi muốn liên hệ với trung tâm
-    - tôi muốn liên hệ với giảng viên
-    - trung tâm liên với tôi
-    - số điện thoại    
-
-- intent: request_email
-  examples: |
-    - tôi liên hệ với trung tâm qua email
-    - qua email được không
-    - email
-    - trung tâm liên hệ với tôi qua email ok

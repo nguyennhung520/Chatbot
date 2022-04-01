@@ -7,8 +7,6 @@ intents:
 - greet
 - deny
 - request_names
-- request_phone
-- request_email
 - goodbye
 - affirm
 - mood_great
@@ -21,13 +19,8 @@ forms:
     - type: from_text
     last_name:
     - type: from_text
-
-
-  phone_form:
     phone_number:
     - type: from_text
-
-  email_form:
     email_address:
     - type: from_text
 
@@ -67,23 +60,15 @@ responses:
   - text: Tên của bạn?
   utter_ask_phone_number:
   - text: Số điện thoại của bạn?
-  utter_ans_phone_number:
-  - text: tôi sẽ liên hệ với bạn qua số điện thoại {phone_number}!
   utter_ask_email_address:
   - text: Địa chỉ email của bạn?
-  utter_ans_email_address:
-  - text: tôi sẽ liên hệ với bạn qua địa chỉ email {email_address}
   utter_submit:
   - text: Ok. Thanks!
   utter_slots_values:
-  - text: tôi sẽ liên hệ với bạn {first_name} {last_name}!
+  - text: tôi sẽ liên hệ với bạn {first_name} {last_name}, qua số điện thoại {phone_number} và email {email_address}!
 
 actions:
 - utter_greet
 - utter_slots_values
-- utter_ans_phone_number
-- utter_ans_email_address
 - utter_submit
 - validate_name_form
-- validate_phone_form
-- validate_email_form
