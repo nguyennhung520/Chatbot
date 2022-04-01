@@ -47,10 +47,6 @@ class ValidateNameForm(FormValidationAction):
         else:
             return {"last_name": slot_value}
 
-class ValidatePhoneForm(FormValidationAction):
-    def name(self) -> Text:
-        return "validate_phone_form"
-
     def validate_phone_number(
         self,
         slot_value: Any,
@@ -75,11 +71,6 @@ class ValidatePhoneForm(FormValidationAction):
             else:
                 print("ES")         
         return {"phone_number": slot_value} 
-
-
-class ValidateEmailForm(FormValidationAction):
-    def name(selt) ->Text:
-        return "validate_email_form"
 
     def validate_email_address(
         self,
